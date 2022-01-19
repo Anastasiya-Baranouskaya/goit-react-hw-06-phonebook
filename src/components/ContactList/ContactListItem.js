@@ -2,6 +2,7 @@
 import { useDispatch } from 'react-redux';
 import { deleteContact } from '../../redux/contacts/actions';
 import s from './ContactList.module.css';
+import PropTypes from 'prop-types';
 
 export default function ContactListItem({ name, number, id }) {
   const dispatch = useDispatch();
@@ -24,6 +25,12 @@ export default function ContactListItem({ name, number, id }) {
     </li>
   );
 }
+ContactListItem.propTypes = {
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  // не могу сообразить какое значение ставить в number чтобы не выводило ошибку!!!
+  // number: PropTypes.number.isRequired,
+};
 
 // export default function ContactListItem({ name, number, id, onDeleteContact }) {
 //   return (

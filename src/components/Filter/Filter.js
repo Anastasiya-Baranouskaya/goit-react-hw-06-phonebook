@@ -1,8 +1,8 @@
 // import { connect } from 'react-redux';
+// import { filter } from '../../redux/contacts/reducers';
 import { v4 as uuidv4 } from 'uuid';
 import { useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-// import { filter } from '../../redux/contacts/reducers';
 import { filterContact } from '../../redux/contacts/actions';
 import { getFilter } from '../../redux/contacts/selectors';
 import s from './Filter.module.css';

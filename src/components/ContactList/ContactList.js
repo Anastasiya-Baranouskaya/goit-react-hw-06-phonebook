@@ -28,13 +28,7 @@ export default function ContactList() {
   return (
     <ul className={s.list}>
       {filteredContacts.map(({ id, name, number }) => (
-        <ContactListItem
-          key={id}
-          id={id}
-          name={name}
-          number={number}
-          // onDeleteContact={onDeleteContact}
-        />
+        <ContactListItem key={id} id={id} name={name} number={number} />
       ))}
     </ul>
   );

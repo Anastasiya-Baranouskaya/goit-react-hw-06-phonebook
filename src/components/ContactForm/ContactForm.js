@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-// import PropTypes from 'prop-types'
 import { v4 as uuidv4 } from 'uuid';
 import s from './ContactForm.module.css';
 import { addContact } from '../../redux/contacts/actions';
@@ -15,7 +14,6 @@ export default function ContactForm() {
 
   const handleChange = e => {
     const { name, value } = e.target;
-
     switch (name) {
       case 'name':
         setName(value);
@@ -85,10 +83,6 @@ export default function ContactForm() {
     </form>
   );
 }
-
-// ContactForm.propTypes = {
-//   state: PropTypes.objectOf(PropTypes.string),
-// };
 
 // import {connect} from 'react-redux'
 // const mapStateToProps = state => {
