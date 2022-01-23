@@ -24,13 +24,13 @@ export default function Component() {
   //   },
   //   [dispatch],
   // );
-
+  const nameFind = uuidv4();
   return (
     <div className={s.div}>
-      <label htmlFor={uuidv4()} className={s.label}>
+      <label htmlFor={nameFind} className={s.label}>
         Find contacts by name:
       </label>
-      <input type="text" value={filter} id={uuidv4()} onChange={changeFilter} />
+      <input type="text" value={filter} id={nameFind} onChange={changeFilter} />
     </div>
   );
 }
